@@ -1,0 +1,72 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    display: block;
+    margin: 8px;
+}
+
+.nav-container {
+    padding: 12px 0 16px 0;
+    max-width: 1128px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    width: 135px;
+}
+
+.btn {
+    text-decoration: none;
+}
+
+.nav-btn {
+    font-size: 1.6rem;
+    font-weight: 600;
+    height: 40px;
+    line-height: 40px;
+    padding: 12px 12px;
+}
+
+.btn-join-now {
+    color: rgba(0,0,0,0.6);
+    margin-right: 12px;
+    border-radius: 4px;
+
+    transition: 0.25s background-color, -webkit-box-shadow, box-shadow;
+}
+
+.btn-join-now:hover {
+    transition: 0.25s background-color, -webkit-box-shadow, box-shadow;
+
+    background-color: rgba(0,0,0,0.08);
+}
+
+.btn-sign-in {
+    color: #0a66c2;
+    margin-left: 12px;
+    border-radius: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    transition: 0.25s background-color, -webkit-box-shadow, box-shadow;
+
+    -webkit-box-sizing: border-box;
+    -webkit-box-shadow: inset 0 0 0 1px #0073b1, inset 0 0 0 2px rgb(0 0 0 / 0%), inset 0 0 0 1px rgb(0 0 0 / 0%);
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 1px #0073b1, inset 0 0 0 2px rgb(0 0 0 / 0%), inset 0 0 0 1px rgb(0 0 0 / 0%);
+}
+
+.btn-sign-in:hover {
+    transition: 0.25s background-color, -webkit-box-shadow, box-shadow;
+
+    background-color: rgba(112,181,249,0.15);
+    -webkit-box-shadow: inset 0 0 0 2px #0073b1, inset 0 0 0 2px rgb(0 0 0 / 0%), inset 0 0 0 1px rgb(0 0 0 / 0%);
+    box-shadow: inset 0 0 0 2px #0073b1, inset 0 0 0 2px rgb(0 0 0 / 0%), inset 0 0 0 1px rgb(0 0 0 / 0%);
+}

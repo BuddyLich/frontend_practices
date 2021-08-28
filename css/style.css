@@ -13,7 +13,6 @@ body {
     padding: 12px 0 16px 0;
     max-width: 1128px;
     margin: auto;
-
     display: flex;
     justify-content: space-between;
 }
@@ -22,6 +21,68 @@ body {
     width: 135px;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1128px;
+    margin: auto;
+}
+
+/* Hero section */
+.hero-section {
+    display: flex;
+    max-width: 1128px;
+    justify-content: space-between;
+}
+
+.hero-left {
+    min-width: 55%;
+}
+
+h1.hero-text {
+    font-size: 5.6rem;
+    font-weight: 200;
+    color: #8f5849;
+}
+
+ul.hero-links {
+    list-style: none;
+    padding: 0;
+}
+
+a.hero-link-btn {
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px -1px 1px rgb(0 0 0 / 8%), 1px 0px 1px rgb(0 0 0 / 8%), -1px 0px 1px rgb(0 0 0 / 8%), 0px 1px 1px rgb(0 0 0 / 8%);
+    min-height: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 408px;
+    padding: 16px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 400;
+}
+
+a.hero-link-btn:hover {
+    box-shadow: 0px 4px 6px rgb(0 0 0 / 15%), 0px 0px 2px rgb(0 0 0 / 15%);
+}
+
+.hero-link-btn i{
+    color: rgba(0,0,0,0.9);
+    font-weight: 400; 
+}
+
+.hero-right img {
+    width: 700px;
+    height: 670px;
+    z-index: 1;
+}
+
+/* Buttons */
 .btn {
     text-decoration: none;
 }

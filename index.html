@@ -23,7 +23,8 @@
         <div class="hero-section">
             <div class="hero-left">
                 <h1 class="hero-text">Welcome to your professional community</h1>
-                <ul class="hero-links">
+                <!-- The following sections was commented because the related section was removed from the original home page -->
+                <!-- <ul class="hero-links">
                     <li>
                         <a href="#" class="hero-link-btn">Search for a job<i class="fas fa-chevron-right"></i></a>
                     </li>
@@ -33,14 +34,37 @@
                     <li>
                         <a href="#" class="hero-link-btn">Learn a new skill<i class="fas fa-chevron-right btn-icon"></i></a>
                     </li>
-                </ul>
+                </ul> -->
+                <div class="hero-sign-in-section">
+                    <form action="#" class="hero-sign-in-form">
+                        <div class="input-container">
+                            <div>
+                                <input type="text" id="username-input" name="username-input" class="form-input">
+                                <label for="username-input" id="username-label" class="form-label">Email or phone number</label>
+                            </div>
+                            <div>
+                                <input type="password" id="paswd-input" name="paswd-input" class="form-input">
+                                <label for="paswd-input" id="paswd-label" class="form-label">Password</label>
+                                <button type="button" class="pswd-visibility-toggle">Show</button>
+                            </div>
+                        </div>
+                        <a href="#" class="sign-in-form-forgot-pswd">Forgot Password?</a>
+                        <button class="sign-in-form-sign-in-btn">Sign in</button>
+                    </form>
+                    <div class="or-span-and-sign-in-with-google-section">
+                        <div class="sign-in-form-or-span-section">
+                            <span>or</span>
+                        </div>
+                        <button class="sign-in-with-google"><img class="google-icon" src="img/google_g_icon.png" class="google-icon" alt=""><span>Sign in with Google</span></button>
+                    </div>
+                </div>
             </div>
             <div class="hero-right">
                 <img src="img/hero_img.svg" alt="" class="hero-img">
             </div>
         </div>
 
-        <div class="job-suggestions">
+        <!-- <div class="job-suggestions">
             <div class="job-suggestions-left">
                 <h2>Find the right job or internship for you</h1>
             </div>
@@ -50,7 +74,8 @@
 
                 </div>
             </div>
-        </div>
+        </div> -->
     </main>
+    <script src="js/main.js"></script>
 </body>
 </html>

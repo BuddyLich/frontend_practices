@@ -21,68 +21,6 @@ body {
     width: 135px;
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    max-width: 1128px;
-    margin: auto;
-}
-
-/* Hero section */
-.hero-section {
-    display: flex;
-    max-width: 1128px;
-    justify-content: space-between;
-}
-
-.hero-left {
-    min-width: 55%;
-}
-
-h1.hero-text {
-    font-size: 5.6rem;
-    font-weight: 200;
-    color: #8f5849;
-}
-
-ul.hero-links {
-    list-style: none;
-    padding: 0;
-}
-
-a.hero-link-btn {
-    font-size: 2rem;
-    text-decoration: none;
-    border-radius: 5px;
-    box-shadow: 0px -1px 1px rgb(0 0 0 / 8%), 1px 0px 1px rgb(0 0 0 / 8%), -1px 0px 1px rgb(0 0 0 / 8%), 0px 1px 1px rgb(0 0 0 / 8%);
-    min-height: 28px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 408px;
-    padding: 16px;
-    line-height: 1.4;
-    margin-bottom: 16px;
-    color: rgba(0, 0, 0, 0.9);
-    font-weight: 400;
-}
-
-a.hero-link-btn:hover {
-    box-shadow: 0px 4px 6px rgb(0 0 0 / 15%), 0px 0px 2px rgb(0 0 0 / 15%);
-}
-
-.hero-link-btn i{
-    color: rgba(0,0,0,0.9);
-    font-weight: 400; 
-}
-
-.hero-right img {
-    width: 700px;
-    height: 670px;
-    z-index: 1;
-}
-
-/* Buttons */
 .btn {
     text-decoration: none;
 }
@@ -130,4 +68,239 @@ a.hero-link-btn:hover {
     background-color: rgba(112,181,249,0.15);
     -webkit-box-shadow: inset 0 0 0 2px #0073b1, inset 0 0 0 2px rgb(0 0 0 / 0%), inset 0 0 0 1px rgb(0 0 0 / 0%);
     box-shadow: inset 0 0 0 2px #0073b1, inset 0 0 0 2px rgb(0 0 0 / 0%), inset 0 0 0 1px rgb(0 0 0 / 0%);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1128px;
+    margin: auto;
+}
+
+/* Hero section */
+.hero-section {
+    display: flex;
+    max-width: 1128px;
+    justify-content: space-between;
+}
+
+.hero-left {
+    min-width: 55%;
+}
+
+h1.hero-text {
+    font-size: 5.6rem;
+    font-weight: 200;
+    color: #8f5849;
+}
+
+/* The following styles are commented because the origional part was removed from the home page */
+/* ul.hero-links {
+    list-style: none;
+    padding: 0;
+}
+
+a.hero-link-btn {
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px -1px 1px rgb(0 0 0 / 8%), 1px 0px 1px rgb(0 0 0 / 8%), -1px 0px 1px rgb(0 0 0 / 8%), 0px 1px 1px rgb(0 0 0 / 8%);
+    min-height: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 408px;
+    padding: 16px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 400;
+}
+
+a.hero-link-btn:hover {
+    box-shadow: 0px 4px 6px rgb(0 0 0 / 15%), 0px 0px 2px rgb(0 0 0 / 15%);
+}
+
+.hero-link-btn i{
+    color: rgba(0,0,0,0.9);
+    font-weight: 400; 
+} */
+
+.hero-sign-in-section {
+    margin-bottom: 42px;
+    width: 408px;
+    display: block;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container div {
+    margin-top: 12px;
+    position: relative;
+}
+
+/* Sign in form */
+.form-input {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: rgba(0,0,0,0.9);
+    font-weight: 400;
+    border: 1px solid rgba(0,0,0,0.6);
+    border-radius: 2px;
+    padding: 20px 12px 4px;
+    outline: none;
+    /* height: 48px; */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-input:focus {
+    border-color: #0073b1;
+    box-shadow: 0 0 0 1px #0073b1;
+}
+
+.form-label {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 12px;
+    line-height: 1.5;
+    pointer-events: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.pswd-visibility-toggle {
+    background-color: rgba(0,0,0,0);
+    border: 0;
+    display: inline-block;
+    font-size: 1.6rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: rgba(0,0,0,0.6);
+    height: 32px;
+    line-height: 32px;
+    padding: 0 8px;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    top: calc(50% - 16px);
+    margin-right: 8px;
+}
+
+.pswd-visibility-toggle:hover {
+    background-color: rgba(207,207,207,0.25);
+    color: rgba(0,0,0,0.75);
+}
+
+.hero-right img {
+    width: 700px;
+    height: 670px;
+    z-index: 1;
+}
+
+.sign-in-form-forgot-pswd {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: rgba(0,0,0,0.9);
+    text-decoration: none;
+    margin: 16px 0 24px 0;
+    display: inline-block;
+}
+
+.sign-in-form-forgot-pswd:hover {
+    text-decoration: underline;
+}
+
+.sign-in-form-sign-in-btn {
+    display: inline-block;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 2rem;
+    line-height: 48px;
+    outline-width: 2px;
+    padding: 0 32px;
+    text-align: center;
+    position: relative;
+    border-radius: 24px;
+    background-color: #0a66c2;
+    height: 56px;
+    font-weight: 400;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.sign-in-form-sign-in-btn:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: #004182;
+}
+
+.or-span-and-sign-in-with-google-section {
+    display: block;
+}
+
+.sign-in-form-or-span-section {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+    padding: 0 12px;
+}
+
+.sign-in-form-or-span-section::before {
+    background-color: rgba(0,0,0,0.35);
+    content: '';
+    height: 1px;
+    width: 50%;
+}
+
+.sign-in-form-or-span-section span {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(0,0,0,0.6);
+    padding: 0 16px;
+}
+
+.sign-in-form-or-span-section::after {
+    background-color: rgba(0,0,0,0.35);
+    content: '';
+    height: 1px;
+    width: 50%;
+}
+
+.sign-in-with-google {
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    color: rgba(0,0,0,0.6);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    padding: 0 32px;
+    height: 56px;
+    width: 100%;
+    border-radius: 28px;
+    box-shadow: inset 0 0 0 1px rgb(0 0 0 / 60%), inset 0 0 0 2px rgb(0 0 0 / 0%), inset 0 0 0 1px rgb(0 0 0 / 0%);
+    transition: all 0.2s ease-in-out;
+}
+
+.sign-in-with-google:hover {
+    box-shadow: inset 0 0 0 1px rgb(0 0 0 / 60%), inset 0 0 0 2px rgb(0 0 0 / 75%), inset 0 0 0 1px rgb(0 0 0 / 0%);
+    background-color: rgba(207,207,207,0.25);
+    transition: all 0.2s ease-in-out;
+}
+
+.google-icon {
+    width: 24px;
+    vertical-align: middle;
+}
+
+.sign-in-with-google span {
+    margin-left: 24px;
 }

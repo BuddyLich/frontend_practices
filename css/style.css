@@ -304,3 +304,43 @@ a.hero-link-btn:hover {
 .sign-in-with-google span {
     margin-left: 24px;
 }
+
+/* The third section */
+.job-suggestions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: transparent;
+    min-height: 840px;
+    padding: 60px 0;
+}
+
+.job-suggestions::after {
+    content: '';
+    width: 100vw;
+    background-color: #faf9f7;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    transform: translateY(-130px);
+    /* top: 0; */
+    height: 648px;
+}
+
+.job-suggestions-left {
+    width: 408px;
+    padding-right: 72px;
+    background-color: transparent;
+}
+
+.job-suggestions-left h2 {
+    font-size: 4.6rem;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.9);
+    line-height: 60px;
+}
+
+.job-suggestions-right {
+    width: 648px;
+}

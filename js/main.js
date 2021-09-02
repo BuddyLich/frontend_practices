@@ -38,3 +38,24 @@ pswdVisBtn.addEventListener('click', () => {
         pswdInput.type = "password"
     }
 })
+
+// Adding these searches item into the div "show-more-less"
+let suggestSearches = [
+    "Engineering", "Business Development", "Finance", "Administrative Assistant", "Retail Associate", 
+    "Customer Service", "Operations", "Information Technology", "Marketing", "Human Resources", 
+    "Healthcare Service", "Sales", "Program and Project Management", "Accounting", "Arts and Design", 
+    "Community and Social Services", "Consulting", "Education", "Entrepreneurship", "Legal", 
+    "Media and Communications", "Military and Protective Services", "Product Management", "Purchasing", 
+    "Quality Assurance", "Real Estate", "Research", "Support", "Administrative"
+]
+
+let showMoreLess = document.querySelector(".show-more-less")
+
+for (i=0; i<suggestSearches.length; i++) {
+    let search = document.createElement('div')
+    search.className = "job-suggestions-items"
+    search.innerText = suggestSearches[i]
+    search.setAttribute("href", "#")
+
+    showMoreLess.appendChild(search)
+}

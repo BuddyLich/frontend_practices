@@ -324,7 +324,6 @@ a.hero-link-btn:hover {
     left: 0;
     height: 100%;
     transform: translateY(-130px);
-    /* top: 0; */
     height: 648px;
 }
 
@@ -360,5 +359,34 @@ a.hero-link-btn:hover {
 }
 
 .show-more-less {
-    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.job-suggestions-items {
+    display: flex;
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    align-items: center;
+    text-align: left;
+    background-color: rgba(0,0,0,0.08);
+    border-radius: 28px;
+    padding: 8px 20px;
+    margin-bottom: 12px;
+    height: 40px;
+    margin: 0 6px 8px 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.job-suggestions-items:hover {
+    background-color: rgba(0,0,0,0.2);
+    color: rgba(0,0,0,0.6);
+    text-decoration: underline;
+    transition: all 0.2s ease-in-out;
 }

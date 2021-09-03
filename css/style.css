@@ -327,6 +327,10 @@ a.hero-link-btn:hover {
     height: 648px;
 }
 
+.job-suggestions.expand::after {
+    height: 1025px;
+}
+
 .job-suggestions-left {
     width: 408px;
     padding-right: 72px;
@@ -353,7 +357,7 @@ a.hero-link-btn:hover {
     color: rgba(0, 0, 0, 0.6);
     text-transform: uppercase;
     line-height: 20px;
-    margin: 0;
+    margin: 0 0 20px 0;
     padding: 0;
     border: 0;
 }
@@ -363,6 +367,12 @@ a.hero-link-btn:hover {
     flex-wrap: wrap;
     flex-direction: row;
     margin-bottom: 15px;
+    overflow: hidden;
+    height: 272px;
+} 
+
+.show-more-less.expand {
+    height: 680px;
 }
 
 .job-suggestions-items {
@@ -377,9 +387,8 @@ a.hero-link-btn:hover {
     background-color: rgba(0,0,0,0.08);
     border-radius: 28px;
     padding: 8px 20px;
-    margin-bottom: 12px;
     height: 40px;
-    margin: 0 6px 8px 0;
+    margin: 0 6px 12px 0;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
@@ -389,4 +398,27 @@ a.hero-link-btn:hover {
     color: rgba(0,0,0,0.6);
     text-decoration: underline;
     transition: all 0.2s ease-in-out;
+}
+
+.show-more-less-btn {
+    background-color: rgba(0,0,0,0);
+    border-radius: 4px;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 0 12px;
+    cursor: pointer;
+    line-height: 40px;
+    transition: all 0.2s ease-in-out;
+}
+
+.show-more-less-btn:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: rgba(0,0,0,0.08);
+    color: rgba(0,0,0,0.9);
+}
+
+.show-more-less-btn span {
+    margin-right: 5px;
 }

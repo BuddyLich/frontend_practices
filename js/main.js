@@ -59,3 +59,36 @@ for (i=0; i<suggestSearches.length; i++) {
 
     showMoreLess.appendChild(search)
 }
+
+// Button that toggle the section "show-more-less"
+let showMoreLessBtn = document.querySelector("button.show-more-less-btn")
+let jobSuggestions = document.querySelector(".job-suggestions")
+
+showMoreLessBtn.addEventListener("click", () => {
+    if (!showMoreLessBtn.classList.contains("show")) {
+        showMoreLessBtn.classList.add("show")
+        showMoreLess.classList.add("expand")
+
+        let showMoreLessBtnSpan = showMoreLessBtn.querySelector("span")
+        let showMoreLessBtnIcon = showMoreLessBtn.querySelector("i")
+        
+        showMoreLessBtnSpan.innerText = "Show less"
+        showMoreLessBtnIcon.classList.remove("fa-chevron-down")
+        showMoreLessBtnIcon.classList.add("fa-chevron-up")
+
+        document.querySelector('.job-suggestions').classList.add("expand")
+        
+    } else {
+        showMoreLessBtn.classList.remove("show")
+        showMoreLess.classList.remove("expand")
+
+        let showMoreLessBtnSpan = showMoreLessBtn.querySelector("span")
+        let showMoreLessBtnIcon = showMoreLessBtn.querySelector("i")
+        
+        showMoreLessBtnSpan.innerText = "Show less"
+        showMoreLessBtnIcon.classList.add("fa-chevron-down")
+        showMoreLessBtnIcon.classList.remove("fa-chevron-up")
+
+        document.querySelector('.job-suggestions').classList.remove("expand")
+    }
+})

@@ -311,8 +311,7 @@ a.hero-link-btn:hover {
     width: 100%;
     justify-content: space-between;
     background-color: transparent;
-    min-height: 840px;
-    padding: 60px 0;
+    padding: 120px 0;
 }
 
 .job-suggestions::after {
@@ -323,12 +322,12 @@ a.hero-link-btn:hover {
     position: absolute;
     left: 0;
     height: 100%;
-    transform: translateY(-130px);
-    height: 648px;
+    transform: translateY(-120px);
+    height: 608px;
 }
 
 .job-suggestions.expand::after {
-    height: 1025px;
+    height: 1015px;
 }
 
 .job-suggestions-left {
@@ -421,4 +420,56 @@ a.hero-link-btn:hover {
 
 .show-more-less-btn span {
     margin-right: 5px;
+}
+
+/* "post-job" section */
+
+.post-job-section {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    max-width: 1128px;
+    padding: 70px 0;
+    position: relative;
+}
+
+.post-job-section h2 {
+    width: 413px;
+    margin-right: 67px;
+    font-size: 3.7rem;
+    font-weight: 400;
+    color: rgba(0,0,0,0.9);
+    color: #B24020;
+    line-height: 50px;
+}
+
+.post-job-section a {
+    border: solid 1px rgba(0,0,0,0.6);
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 2rem;
+    line-height: 1.9;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+    border-radius: 28px;
+    padding: 8px 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.post-job-section a:hover {
+    text-decoration: underline;
+    background-color: rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.post-job-section::after {
+    content: "";
+    background-color: #f1ece5;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    right: calc((1128px - 100vw) / 2);
+    /* because the width of ".post-job-section" isn't 100vw, and it start at around 30% at the left side */
+    /* Therefore, the right attribute need to be adjusted so that the width is 100vw and displayed fully */
 }

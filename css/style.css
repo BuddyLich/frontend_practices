@@ -473,3 +473,52 @@ a.hero-link-btn:hover {
     /* because the width of ".post-job-section" isn't 100vw, and it start at around 30% at the left side */
     /* Therefore, the right attribute need to be adjusted so that the width is 100vw and displayed fully */
 }
+
+/* Slider Section */
+.slider-background {
+    display: flex;
+    width: 100%;
+    max-width: 1128px;
+    min-height: 840px;
+    padding: 60px 0;
+    position: relative;
+    background: transparent;
+}
+
+.slider-section {
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-header {
+    position: sticky;
+    display: flex;
+    margin-bottom: 16px;
+    left: 0;
+}
+
+.slider-btn {
+    display: flex;
+    padding: 0 16px;
+    color: rgba(0, 0, 0, 0.6);
+    border: 0;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 500;
+    height: 32px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(0,0,0,0);
+}
+
+.slider-btn.disabled {
+    color: rgba(0, 0, 0, 0.15);
+    cursor: not-allowed;
+}
+
+.slider-btn span {
+    margin: 0 6px;
+}

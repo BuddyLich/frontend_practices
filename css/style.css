@@ -522,3 +522,43 @@ a.hero-link-btn:hover {
 .slider-btn span {
     margin: 0 6px;
 }
+
+.slider-list {
+    display: flex;
+    overflow: hidden;
+    padding: 0;
+}
+
+.slider-card {
+    display: flex;
+    list-style: none;
+    margin-right: 96px;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+}
+
+.slider-card-content {
+    margin-right: 64px;
+    width: 563px;
+}
+
+.slider-card-content h2 {
+    color: #2977c9;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.slider-card-content p {
+    line-height: 1.25;
+    font-weight: 200;
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.9); 
+}
+
+.slider-card-img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+}

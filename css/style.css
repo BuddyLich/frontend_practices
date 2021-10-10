@@ -525,8 +525,8 @@ a.hero-link-btn:hover {
 
 .slider-list {
     display: flex;
-    overflow: hidden;
     padding: 0;
+    transition: transform 0.5s ease-in-out;
 }
 
 .slider-card {

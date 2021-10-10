@@ -92,3 +92,32 @@ showMoreLessBtn.addEventListener("click", () => {
         document.querySelector('.job-suggestions').classList.remove("expand")
     }
 })
+
+// Section for slider-list
+
+let sliderIdx = 0
+let sliderListEl = document.querySelector(".slider-list")
+
+let preSlider = document.getElementById("slider-left")
+let nextSlider = document.getElementById("slider-right")
+
+preSlider.addEventListener('click', sliderListPrev)
+nextSlider.addEventListener('click', sliderListNext)
+
+function sliderListNext() {
+    if (sliderIdx >= 2) {
+        return
+    } else {
+        sliderIdx += 1
+        sliderListEl.style.transform = `translateX(${sliderIdx*(-1147)}px)`
+    }
+}
+
+function sliderListPrev() {
+    if (sliderIdx <= 0) {
+        return
+    } else {
+        sliderIdx -= 1
+        sliderListEl.style.transform = `translateX(${sliderIdx*(-1147)}px)`
+    }
+}

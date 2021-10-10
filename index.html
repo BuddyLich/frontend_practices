@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin (Fake): Log In or Sign Up</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" ><img class="nav-logo" src="img/nav_logo.png" alt=""></a>
+            <div class="account-btns">
+                <a href="#" class="btn nav-btn btn-join-now">Join now</a>
+                <a href="#" class="btn nav-btn btn-sign-in">Sign in</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="main">
+        <div class="hero-section">
+            <div class="hero-left">
+                <h1 class="hero-text">Welcome to your professional community</h1>
+                <!-- The following sections was commented because the related section was removed from the original home page -->
+                <!-- <ul class="hero-links">
+                    <li>
+                        <a href="#" class="hero-link-btn">Search for a job<i class="fas fa-chevron-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="hero-link-btn">Find a person you know<i class="fas fa-chevron-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="hero-link-btn">Learn a new skill<i class="fas fa-chevron-right btn-icon"></i></a>
+                    </li>
+                </ul> -->
+                <div class="hero-sign-in-section">
+                    <form action="#" class="hero-sign-in-form">
+                        <div class="input-container">
+                            <div>
+                                <input type="text" id="username-input" name="username-input" class="form-input">
+                                <label for="username-input" id="username-label" class="form-label">Email or phone number</label>
+                            </div>
+                            <div>
+                                <input type="password" id="paswd-input" name="paswd-input" class="form-input">
+                                <label for="paswd-input" id="paswd-label" class="form-label">Password</label>
+                                <button type="button" class="pswd-visibility-toggle">Show</button>
+                            </div>
+                        </div>
+                        <a href="#" class="sign-in-form-forgot-pswd">Forgot Password?</a>
+                        <button class="sign-in-form-sign-in-btn">Sign in</button>
+                    </form>
+                    <div class="or-span-and-sign-in-with-google-section">
+                        <div class="sign-in-form-or-span-section">
+                            <span>or</span>
+                        </div>
+                        <button class="sign-in-with-google"><img class="google-icon" src="img/google_g_icon.png" class="google-icon" alt=""><span>Sign in with Google</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <img src="img/hero_img.svg" alt="" class="hero-img">
+            </div>
+        </div>
+
+        <div class="job-suggestions">
+            <div class="job-suggestions-left">
+                <h2>Find the right job or internship for you</h1>
+            </div>
+            <div class="job-suggestions-right">
+                <h2>Suggested Searches</h2>
+                <div class="show-more-less">
+                </div>
+                <button class="show-more-less-btn"><span>Show more</span><i class="fas fa-chevron-down"></i></button>
+            </div>
+        </div>
+
+        <div class="post-job-section">
+            <h2>Post your job for millions of people to see</h2>
+            <a href="#">Post a job</a>
+        </div>
+
+        <div class="slider-background">
+            <div class="slider-section">
+                <div class="slider-header">
+                    <button class="slider-btn" id="slider-left" href="#">
+                        <i class="fas fa-chevron-left"></i>
+                        <span>Previous</span>
+                    </button>
+                    <button class="slider-btn" id="slider-right" href="#">
+                        <span>Next</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+            <ul class="slider-list">
+                <li class="slider-card display">
+                    <div class="slider-card-content">
+                        <h2>Let the right people know you’re open to work</h2>
+                        <p>With the Open To Work feature, you can privately tell recruiters or publicly share with the LinkedIn community that you are looking for new job opportunities</p>
+                    </div>
+                    <img src="https://static-exp1.licdn.com/sc/h/dbvmk0tsk0o0hd59fi64z3own" alt="" class="slider-card-img">                    
+                </li>
+
+                <li class="slider-card">
+                    <div class="slider-card-content">
+                        <h2>Conversations today could lead to opportunity tomorrow</h2>
+                        <p>Sending messages to people you know is a great way to strengthen relationships as you take the next step in your career</p>
+                    </div>
+                    <img src="https://static-exp1.licdn.com/sc/h/2r8kd5zqpi905lkzsshdlvvn5" alt="" class="slider-card-img">                    
+                </li>
+
+                <li class="slider-card">
+                    <div class="slider-card-content">
+                        <h2>Stay up to date on your industry</h2>
+                        <p>From Live videos, to stories, to newsletters and more, LinkedIn is full of ways to stay up to date on the latest discussions in your industry</p>
+                    </div>
+                    <img src="https://static-exp1.licdn.com/sc/h/ann24vsq7r0ux3vipqa1n90gg" alt="" class="slider-card-img">                    
+                </li>
+            </ul>
+            </div>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

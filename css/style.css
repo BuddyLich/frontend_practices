@@ -1,0 +1,564 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    display: block;
+    margin: 8px;
+}
+
+.nav-container {
+    padding: 12px 0 16px 0;
+    max-width: 1128px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    width: 135px;
+}
+
+.btn {
+    text-decoration: none;
+}
+
+.nav-btn {
+    font-size: 1.6rem;
+    font-weight: 600;
+    height: 40px;
+    line-height: 40px;
+    padding: 12px 12px;
+}
+
+.btn-join-now {
+    color: rgba(0,0,0,0.6);
+    margin-right: 12px;
+    border-radius: 4px;
+
+    transition: 0.25s background-color, -webkit-box-shadow, box-shadow;
+}
+
+.btn-join-now:hover {
+    transition: 0.25s background-color, -webkit-box-shadow, box-shadow;
+
+    background-color: rgba(0,0,0,0.08);
+}
+
+.btn-sign-in {
+    color: #0a66c2;
+    margin-left: 12px;
+    border-radius: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    transition: 0.25s background-color, -webkit-box-shadow, box-shadow;
+
+    -webkit-box-sizing: border-box;
+    -webkit-box-shadow: inset 0 0 0 1px #0073b1, inset 0 0 0 2px rgb(0 0 0 / 0%), inset 0 0 0 1px rgb(0 0 0 / 0%);
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 1px #0073b1, inset 0 0 0 2px rgb(0 0 0 / 0%), inset 0 0 0 1px rgb(0 0 0 / 0%);
+}
+
+.btn-sign-in:hover {
+    transition: 0.25s background-color, -webkit-box-shadow, box-shadow;
+
+    background-color: rgba(112,181,249,0.15);
+    -webkit-box-shadow: inset 0 0 0 2px #0073b1, inset 0 0 0 2px rgb(0 0 0 / 0%), inset 0 0 0 1px rgb(0 0 0 / 0%);
+    box-shadow: inset 0 0 0 2px #0073b1, inset 0 0 0 2px rgb(0 0 0 / 0%), inset 0 0 0 1px rgb(0 0 0 / 0%);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1128px;
+    margin: auto;
+}
+
+/* Hero section */
+.hero-section {
+    display: flex;
+    max-width: 1128px;
+    justify-content: space-between;
+}
+
+.hero-left {
+    min-width: 55%;
+}
+
+h1.hero-text {
+    font-size: 5.6rem;
+    font-weight: 200;
+    color: #8f5849;
+}
+
+/* The following styles are commented because the origional part was removed from the home page */
+/* ul.hero-links {
+    list-style: none;
+    padding: 0;
+}
+
+a.hero-link-btn {
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px -1px 1px rgb(0 0 0 / 8%), 1px 0px 1px rgb(0 0 0 / 8%), -1px 0px 1px rgb(0 0 0 / 8%), 0px 1px 1px rgb(0 0 0 / 8%);
+    min-height: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 408px;
+    padding: 16px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 400;
+}
+
+a.hero-link-btn:hover {
+    box-shadow: 0px 4px 6px rgb(0 0 0 / 15%), 0px 0px 2px rgb(0 0 0 / 15%);
+}
+
+.hero-link-btn i{
+    color: rgba(0,0,0,0.9);
+    font-weight: 400; 
+} */
+
+.hero-sign-in-section {
+    margin-bottom: 42px;
+    width: 408px;
+    display: block;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container div {
+    margin-top: 12px;
+    position: relative;
+}
+
+/* Sign in form */
+.form-input {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: rgba(0,0,0,0.9);
+    font-weight: 400;
+    border: 1px solid rgba(0,0,0,0.6);
+    border-radius: 2px;
+    padding: 20px 12px 4px;
+    outline: none;
+    /* height: 48px; */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-input:focus {
+    border-color: #0073b1;
+    box-shadow: 0 0 0 1px #0073b1;
+}
+
+.form-label {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 12px;
+    line-height: 1.5;
+    pointer-events: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.pswd-visibility-toggle {
+    background-color: rgba(0,0,0,0);
+    border: 0;
+    display: inline-block;
+    font-size: 1.6rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: rgba(0,0,0,0.6);
+    height: 32px;
+    line-height: 32px;
+    padding: 0 8px;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    top: calc(50% - 16px);
+    margin-right: 8px;
+}
+
+.pswd-visibility-toggle:hover {
+    background-color: rgba(207,207,207,0.25);
+    color: rgba(0,0,0,0.75);
+}
+
+.hero-right img {
+    width: 700px;
+    height: 670px;
+    z-index: 1;
+}
+
+.sign-in-form-forgot-pswd {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: rgba(0,0,0,0.9);
+    text-decoration: none;
+    margin: 16px 0 24px 0;
+    display: inline-block;
+}
+
+.sign-in-form-forgot-pswd:hover {
+    text-decoration: underline;
+}
+
+.sign-in-form-sign-in-btn {
+    display: inline-block;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 2rem;
+    line-height: 48px;
+    outline-width: 2px;
+    padding: 0 32px;
+    text-align: center;
+    position: relative;
+    border-radius: 24px;
+    background-color: #0a66c2;
+    height: 56px;
+    font-weight: 400;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.sign-in-form-sign-in-btn:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: #004182;
+}
+
+.or-span-and-sign-in-with-google-section {
+    display: block;
+}
+
+.sign-in-form-or-span-section {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+    padding: 0 12px;
+}
+
+.sign-in-form-or-span-section::before {
+    background-color: rgba(0,0,0,0.35);
+    content: '';
+    height: 1px;
+    width: 50%;
+}
+
+.sign-in-form-or-span-section span {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(0,0,0,0.6);
+    padding: 0 16px;
+}
+
+.sign-in-form-or-span-section::after {
+    background-color: rgba(0,0,0,0.35);
+    content: '';
+    height: 1px;
+    width: 50%;
+}
+
+.sign-in-with-google {
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    color: rgba(0,0,0,0.6);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    padding: 0 32px;
+    height: 56px;
+    width: 100%;
+    border-radius: 28px;
+    box-shadow: inset 0 0 0 1px rgb(0 0 0 / 60%), inset 0 0 0 2px rgb(0 0 0 / 0%), inset 0 0 0 1px rgb(0 0 0 / 0%);
+    transition: all 0.2s ease-in-out;
+}
+
+.sign-in-with-google:hover {
+    box-shadow: inset 0 0 0 1px rgb(0 0 0 / 60%), inset 0 0 0 2px rgb(0 0 0 / 75%), inset 0 0 0 1px rgb(0 0 0 / 0%);
+    background-color: rgba(207,207,207,0.25);
+    transition: all 0.2s ease-in-out;
+}
+
+.google-icon {
+    width: 24px;
+    vertical-align: middle;
+}
+
+.sign-in-with-google span {
+    margin-left: 24px;
+}
+
+/* The third section */
+.job-suggestions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 120px 0;
+}
+
+.job-suggestions::after {
+    content: '';
+    width: 100vw;
+    background-color: #faf9f7;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    transform: translateY(-120px);
+    height: 608px;
+}
+
+.job-suggestions.expand::after {
+    height: 1015px;
+}
+
+.job-suggestions-left {
+    width: 408px;
+    padding-right: 72px;
+    background-color: transparent;
+}
+
+.job-suggestions-left h2 {
+    font-size: 4.6rem;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.9);
+    line-height: 60px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.job-suggestions-right {
+    width: 648px;
+}
+
+.job-suggestions-right h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+    line-height: 20px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    border: 0;
+}
+
+.show-more-less {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 15px;
+    overflow: hidden;
+    height: 272px;
+} 
+
+.show-more-less.expand {
+    height: 680px;
+}
+
+.job-suggestions-items {
+    display: flex;
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    align-items: center;
+    text-align: left;
+    background-color: rgba(0,0,0,0.08);
+    border-radius: 28px;
+    padding: 8px 20px;
+    height: 40px;
+    margin: 0 6px 12px 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.job-suggestions-items:hover {
+    background-color: rgba(0,0,0,0.2);
+    color: rgba(0,0,0,0.6);
+    text-decoration: underline;
+    transition: all 0.2s ease-in-out;
+}
+
+.show-more-less-btn {
+    background-color: rgba(0,0,0,0);
+    border-radius: 4px;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 0 12px;
+    cursor: pointer;
+    line-height: 40px;
+    transition: all 0.2s ease-in-out;
+}
+
+.show-more-less-btn:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: rgba(0,0,0,0.08);
+    color: rgba(0,0,0,0.9);
+}
+
+.show-more-less-btn span {
+    margin-right: 5px;
+}
+
+/* "post-job" section */
+
+.post-job-section {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    max-width: 1128px;
+    padding: 70px 0;
+    position: relative;
+}
+
+.post-job-section h2 {
+    width: 413px;
+    margin-right: 67px;
+    font-size: 3.7rem;
+    font-weight: 400;
+    color: rgba(0,0,0,0.9);
+    color: #B24020;
+    line-height: 50px;
+}
+
+.post-job-section a {
+    border: solid 1px rgba(0,0,0,0.6);
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 2rem;
+    line-height: 1.9;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+    border-radius: 28px;
+    padding: 8px 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.post-job-section a:hover {
+    text-decoration: underline;
+    background-color: rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.post-job-section::after {
+    content: "";
+    background-color: #f1ece5;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    right: calc((1128px - 100vw) / 2);
+    /* because the width of ".post-job-section" isn't 100vw, and it start at around 30% at the left side */
+    /* Therefore, the right attribute need to be adjusted so that the width is 100vw and displayed fully */
+}
+
+/* Slider Section */
+.slider-background {
+    display: flex;
+    width: 100%;
+    max-width: 1128px;
+    min-height: 840px;
+    padding: 60px 0;
+    position: relative;
+    background: transparent;
+}
+
+.slider-section {
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-header {
+    position: sticky;
+    display: flex;
+    margin-bottom: 16px;
+    left: 0;
+}
+
+.slider-btn {
+    display: flex;
+    padding: 0 16px;
+    color: rgba(0, 0, 0, 0.6);
+    border: 0;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 500;
+    height: 32px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(0,0,0,0);
+}
+
+.slider-btn.disabled {
+    color: rgba(0, 0, 0, 0.15);
+    cursor: not-allowed;
+}
+
+.slider-btn span {
+    margin: 0 6px;
+}
+
+.slider-list {
+    display: flex;
+    padding: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-card {
+    display: flex;
+    list-style: none;
+    margin-right: 96px;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+}
+
+.slider-card-content {
+    margin-right: 64px;
+    width: 563px;
+}
+
+.slider-card-content h2 {
+    color: #2977c9;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.slider-card-content p {
+    line-height: 1.25;
+    font-weight: 200;
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.9); 
+}
+
+.slider-card-img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+}

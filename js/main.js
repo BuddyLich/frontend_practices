@@ -105,19 +105,27 @@ preSlider.addEventListener('click', sliderListPrev)
 nextSlider.addEventListener('click', sliderListNext)
 
 function sliderListNext() {
+    sliderIdx += 1
+    sliderListEl.style.transform = `translateX(${sliderIdx*(-1147)}px)`
+
     if (sliderIdx >= 2) {
-        return
-    } else {
-        sliderIdx += 1
-        sliderListEl.style.transform = `translateX(${sliderIdx*(-1147)}px)`
+        nextSlider.disabled = true
+    }
+
+    if (sliderIdx === 1) {
+        preSlider.disabled = false
     }
 }
 
 function sliderListPrev() {
+    sliderIdx -= 1
+    sliderListEl.style.transform = `translateX(${sliderIdx*(-1147)}px)`
+
     if (sliderIdx <= 0) {
-        return
-    } else {
-        sliderIdx -= 1
-        sliderListEl.style.transform = `translateX(${sliderIdx*(-1147)}px)`
+        preSlider.disabled = true
+    }
+
+    if (sliderIdx === 1) {
+        nextSlider.disabled = false
     }
 }

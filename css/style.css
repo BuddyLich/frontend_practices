@@ -514,7 +514,7 @@ a.hero-link-btn:hover {
     background-color: rgba(0,0,0,0);
 }
 
-.slider-btn.disabled {
+.slider-btn:disabled {
     color: rgba(0, 0, 0, 0.15);
     cursor: not-allowed;
 }

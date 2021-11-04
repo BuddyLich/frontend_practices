@@ -479,7 +479,6 @@ a.hero-link-btn:hover {
     display: flex;
     width: 100%;
     max-width: 1128px;
-    min-height: 840px;
     padding: 180px 0 60px 0;
     position: relative;
     background: transparent;
@@ -563,14 +562,6 @@ a.hero-link-btn:hover {
     border-radius: 50%;
 }
 
-/* .slider-background:after {
-    content: '';
-    background-color: rgba(250, 249, 247, 1);
-    z-index: -1;
-    height: 100%;
-    /* transform: translateY(-120px); */
-
-
 .slider-background::after {
     content: '';
     width: 100vw;
@@ -581,4 +572,47 @@ a.hero-link-btn:hover {
     transform: translateY(-180px);
     right: calc((1128px - 100vw) / 2);
     height: 840px;
+}
+
+.py-section {
+    padding: 60px 0;
+    max-width: 1128px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.connect-or-learn {
+    display: flex;
+    padding: 60px 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.py {
+    flex-wrap: wrap;
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+
+}
+
+.py img {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 56px;
+    margin-right: 72px;
+}
+
+.py-header-and-btn {
+    width: 456px;
+}
+
+.py-header-and-btn h2 {
+    font-weight: 300;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 45px;
 }

@@ -129,3 +129,4 @@ function sliderListPrev() {
         nextSlider.disabled = false
     }
 }
+

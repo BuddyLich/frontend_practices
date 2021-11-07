@@ -130,3 +130,12 @@ function sliderListPrev() {
     }
 }
 
+let pyDropDownBtn = document.querySelector(".btn-dropdown")
+let pyDropDownDiv = document.querySelector(".list-dropdown")
+
+pyDropDownBtn.addEventListener("click", () => {pyDropDownDiv.classList.toggle("hidden")})
+document.addEventListener("click", (e) => {
+    if (!pyDropDownDiv.classList.contains("hidden") && !pyDropDownBtn.contains(e.target)) {
+        pyDropDownDiv.classList.add("hidden")
+    }
+})

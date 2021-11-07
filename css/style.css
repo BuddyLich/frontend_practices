@@ -634,6 +634,10 @@ a.hero-link-btn:hover {
     margin-bottom: 12px;
 }
 
+.dropdown {
+    position: relative;
+}
+
 .btn-dropdown {
     font-size: 2rem;
     background-color: transparent;
@@ -655,3 +659,61 @@ a.hero-link-btn:hover {
     background-color: rgba(0,0,0,0.08);
 }
 
+.list-dropdown {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgb(0 0 0 / 15%), 0px 0px 2px rgb(0 0 0 / 15%);
+    position: absolute;
+    width: auto;
+    overflow-y: auto;
+    bottom: auto;
+    top: 100%;
+    z-index: 10;
+    outline: none;
+    display: block
+}
+
+.list-dropdown.hidden {
+    display: none;
+}
+
+.list-dropdown ul {
+    max-height: 380px;
+    list-style-type: none;
+    padding-left: 0;
+    width: 358px;
+    overflow: scroll;
+    margin: 4px 0 0 0;
+}
+
+.py-dropdown-li {
+    margin: 16px 8px 0 16px;
+    display: list-item;
+}
+
+.py-dropdown-li a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.py-dropdown-li a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #0a66c2;
+}
+
+.dropdown-header {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.9);
+    line-height: 1.25;
+}
+
+.dropdown-subtext {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.25;
+}

@@ -149,9 +149,11 @@ DROPDOWNLST.forEach(e => {
 
     let header = document.createElement("span")
     header.innerHTML = e["header"]
+    header.classList.add("dropdown-header")
 
     let subtext = document.createElement("span")
     subtext.innerHTML = e["subtext"]
+    subtext.classList.add("dropdown-subtext")
 
     a.appendChild(header)
     a.appendChild(subtext)

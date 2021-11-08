@@ -105,19 +105,37 @@ preSlider.addEventListener('click', sliderListPrev)
 nextSlider.addEventListener('click', sliderListNext)
 
 function sliderListNext() {
+    sliderIdx += 1
+    sliderListEl.style.transform = `translateX(${sliderIdx*(-1147)}px)`
+
     if (sliderIdx >= 2) {
-        return
-    } else {
-        sliderIdx += 1
-        sliderListEl.style.transform = `translateX(${sliderIdx*(-1147)}px)`
+        nextSlider.disabled = true
+    }
+
+    if (sliderIdx === 1) {
+        preSlider.disabled = false
     }
 }
 
 function sliderListPrev() {
+    sliderIdx -= 1
+    sliderListEl.style.transform = `translateX(${sliderIdx*(-1147)}px)`
+
     if (sliderIdx <= 0) {
-        return
-    } else {
-        sliderIdx -= 1
-        sliderListEl.style.transform = `translateX(${sliderIdx*(-1147)}px)`
+        preSlider.disabled = true
+    }
+
+    if (sliderIdx === 1) {
+        nextSlider.disabled = false
     }
 }
+
+let pyDropDownBtn = document.querySelector(".btn-dropdown")
+let pyDropDownDiv = document.querySelector(".list-dropdown")
+
+pyDropDownBtn.addEventListener("click", () => {pyDropDownDiv.classList.toggle("hidden")})
+document.addEventListener("click", (e) => {
+    if (!pyDropDownDiv.classList.contains("hidden") && !pyDropDownBtn.contains(e.target)) {
+        pyDropDownDiv.classList.add("hidden")
+    }
+})

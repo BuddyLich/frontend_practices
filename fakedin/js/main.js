@@ -12,7 +12,6 @@ function labelTransition(inputEl, labelEl) {
         if (inputEl.value.length === 0) {
             labelEl.style.paddingTop = "12px"
         }
-        console.log(signInInput.value)
     })
     
     inputEl.addEventListener('input', () => {
@@ -134,8 +133,22 @@ let pyDropDownBtn = document.querySelector(".btn-dropdown")
 let pyDropDownDiv = document.querySelector(".list-dropdown")
 
 pyDropDownBtn.addEventListener("click", () => {pyDropDownDiv.classList.toggle("hidden")})
-document.addEventListener("click", (e) => {
+document.addEventListener("click", e => {
     if (!pyDropDownDiv.classList.contains("hidden") && !pyDropDownBtn.contains(e.target)) {
         pyDropDownDiv.classList.add("hidden")
+    }
+})
+
+let languageBtn = document.querySelector("#lang-btn")
+let footerDropDownDiv = document.querySelector(".footer-dropdown")
+// let footerDropDownUl = document.querySelector(".footer-dropdown ul")
+
+languageBtn.addEventListener("click", () => {
+    footerDropDownDiv.classList.toggle("hidden")
+})
+
+document.addEventListener("click", e => {
+    if (!footerDropDownDiv.classList.contains("hidden") && !footerDropDownDiv.contains(e.target)) {
+        footerDropDownDiv.classList.add("hidden")
     }
 })

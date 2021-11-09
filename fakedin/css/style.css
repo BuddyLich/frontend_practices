@@ -18,8 +18,48 @@ body {
     justify-content: space-between;
 }
 
-.nav-logo {
-    width: 135px;
+.logo-pt-1 {
+    color: #0a66c2;
+    background-color: transparent;
+}
+
+.logo-pt-2 {
+    color: #fff;
+    background-color: #0a66c2;
+    border-radius: 2px;
+    padding: 0 4px;
+}
+
+.logo-nav {
+    font-size: 3rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.logo-final-section {
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: default;
+}
+
+.logo-final-section .logo-pt-2 {
+    padding: 0, 2px;
+}
+
+.logo-footer {
+    font-size: 1.2rem;
+    cursor: default;
+}
+
+.logo-footer .logo-pt-1 {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.logo-footer .logo-pt-2 {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0 1px;
+    margin-left: 0px;
 }
 
 .btn {
@@ -835,4 +875,185 @@ a.hero-link-btn:hover {
     top: 0;
     position: absolute;
     z-index: -1;
+}
+
+.final-section {
+    max-width: 1128px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.final-section-container {
+    padding: 24px 0 22px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* flex-direction: column; */
+}
+
+.final-section-container img {
+    width: 84px;
+    height: 21px;
+}
+
+.bottom-nav {
+    display: flex;
+    padding-left: 16px;
+    justify-content: flex-end;
+}
+
+.bottom-nav-list {
+    max-width: 192px;
+    margin-right: 24px;
+    width: 100%;
+}
+
+.bottom-nav-list h3 {
+    color: rgba(0, 0, 0, 0.9);
+    line-height: 1.25;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: ui-sans-serif, system-ui;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.bottom-nav-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.bottom-nav-list li {
+    line-height: 1.5;
+    text-align: left;
+    width: 192px;
+}
+
+.bottom-nav-list li a {
+    color: #666667;
+    line-height: 1.25;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: ui-sans-serif, system-ui;
+    text-decoration: none;
+}
+
+.bottom-nav-list li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #0073b1;
+    color: #0073b1;
+}
+
+.final-section-container::after {
+    content: "";
+    right: calc((1128px - 100vw) / 2);
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0; 
+    background-color: rgba(250, 249, 247, 1);
+}
+
+footer {
+    width: 100%;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    min-height: 50px;
+    width: 1128px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+footer li {
+    font-size: 1.2rem;
+    line-height: 1.333;
+    font-weight: 550;
+    color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    position: relative;
+    align-items: center;
+}
+
+footer li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+footer li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #0073b1;
+    color: #0073b1;
+}
+
+#lang-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.2rem;
+    line-height: 1.333;
+    font-weight: 550;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#lang-btn:hover {
+    color: #0073b1;
+}
+
+.footer-dropdown {
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.footer-dropdown ul {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    width: auto;
+    padding: 0;
+    max-height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    bottom: 100%;
+    top: auto;
+    box-shadow: 0px 4px 6px rgb(0 0 0 / 15%), 0px 0px 2px rgb(0 0 0 / 15%);
+    opacity: 1;
+}
+
+.footer-dropdown.hidden ul {
+    opacity: 0;
+}
+
+.footer-dropdown li {
+    margin: 0;
+    padding: 0;
+}
+
+.lang-btn {
+    font-size: 1.2rem;
+    line-height: 1.333;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: transparent;
+    color: #0073b1;
+    padding: 5px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-dropdown .lang-btn:hover {
+    background-color: #0073b1;
+    color: #fff;
 }

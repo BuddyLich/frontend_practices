@@ -12,7 +12,6 @@ function labelTransition(inputEl, labelEl) {
         if (inputEl.value.length === 0) {
             labelEl.style.paddingTop = "12px"
         }
-        console.log(signInInput.value)
     })
     
     inputEl.addEventListener('input', () => {
